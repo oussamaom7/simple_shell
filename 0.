@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# This is a simple shell script that demonstrates usage of Betty-compliant code.
+
+# Function to greet the user
+greet_user() {
+    echo "Hello, welcome to the Betty-compliant shell script!"
+}
+
+# Function to add two numbers
+add_numbers() {
+    local sum=$(( $1 + $2 ))
+    echo "The sum of $1 and $2 is $sum"
+}
+
+# Main function
+main() {
+    greet_user
+    add_numbers 5 10
+}
+
+# Execute main function
+main
+
